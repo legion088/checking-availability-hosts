@@ -1,5 +1,6 @@
 import asyncio
 import aioping
+import os
 
 
 async def check_available_hosts(hostname: str):
@@ -42,3 +43,4 @@ if __name__ == '__main__':
     lines = open_readlines_file("hosts.txt")
     hosts = check_validation_lines(lines)
     run(hosts)
+    os.system("pause")	
