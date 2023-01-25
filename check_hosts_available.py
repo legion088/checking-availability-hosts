@@ -18,7 +18,7 @@ def check_validation_lines(lines: list) -> list:
         raise ValueError("Файл пустой!")
     forbidden_characters = [
         ',', '~', ':', '!', ' ', '@', '#',
-        '$', '%', '^', '&', '`', '.', '()',
+        '$', '%', '^', '&', '`', '()',
         '{}', '_'
     ]
 
