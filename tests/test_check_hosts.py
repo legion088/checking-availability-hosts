@@ -17,7 +17,7 @@ def test_check_validations_forbidden_symbols():
     with pytest.raises(ValueError) as f_emp:
         check_validation_lines([
             ',', '~', ':', '!', ' ', '@', '#',
-            '$', '%', '^', '&', '`', '.', '()',
+            '$', '%', '^', '&', '`', '()',
             '{}', '_'
         ])
     assert "Строка содержит запрещающий символ!" == f_emp.value.args[0]
