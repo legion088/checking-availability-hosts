@@ -1,3 +1,4 @@
+server
 server01
 server-02
 server03
